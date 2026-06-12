@@ -71,29 +71,29 @@
 
 # example 4
 
-# class student:
-#     def __init__(self, *args):
-#         self.data = args
-        
-#     def users(self):
-#         for i in self.data[0]:
-#             print(i)
-    
-#     def details(self):
-#         print(self.data[1])
-#         for i in self.data[1]:
-#             print(i)
-    
-# s = student({"dheeraj", "kunal", "harsh", "praveen"}, {"address": "kukas", "College": "arya", "location": "jaipur"})
-# s.users()
-# s.details()
-
-
-
-
 class student:
-    def __init__(self, **args):
+    def __init__(self, *args):
         self.data = args
+        
+    def users(self):
+        for i in self.data[0]:
+            print(i)
+    
+    def details(self):
+        print(self.data[1])
+        for i in self.data[1]:
+            print(i)
+    
+s = student({"dheeraj", "kunal", "harsh", "praveen"}, {"address": "kukas", "College": "arya", "location": "jaipur"})
+s.users()
+s.details()
+
+
+
+
+# class student:
+#     def __init__(self, **args):
+#         self.data = args
         
     def data(self):
         print(self.data)
