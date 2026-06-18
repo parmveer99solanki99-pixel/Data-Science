@@ -1,0 +1,52 @@
+[
+    {
+        "order_id": 1001,
+        "customer_name": "Amit Sharma",
+        "product": "Laptop",
+        "category": "Electronics",
+        "price": 55000,
+        "quantity": 1,
+        "order_date": "2026-01-10",
+        "city": "Jaipur"
+    },
+    {
+        "order_id": 1002,
+        "customer_name": "Priya Verma",
+        "product": "Smartphone",
+        "category": "Electronics",
+        "price": 25000,
+        "quantity": 2,
+        "order_date": "2026-01-12",
+        "city": "Delhi"
+    },
+    {
+        "order_id": 1003,
+        "customer_name": "Rahul Singh",
+        "product": "Headphones",
+        "category": "Accessories",
+        "price": 2000,
+        "quantity": 3,
+        "order_date": "2026-01-15",
+        "city": "Mumbai"
+    },
+    {
+        "order_id": 1004,
+        "customer_name": "Neha Gupta",
+        "product": "Tablet",
+        "category": "Electronics",
+        "price": 18000,
+        "quantity": 1,
+        "order_date": "2026-01-18",
+        "city": "Pune"
+    },
+    {
+        "order_id": 1005,
+        "customer_name": "Karan Mehta",
+        "product": "Smart Watch",
+        "category": "Wearables",
+        "price": 5000,
+        "quantity": 2,
+        "order_date": "2026-01-20",
+        "city": "Ahmedabad"
+    }
+]
