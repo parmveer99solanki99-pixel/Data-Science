@@ -1,0 +1,66 @@
+# feature scaling
+
+import numpy as np
+import pandas as pd
+# import matplotlib.pyplot as plt
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
+
+data = "https://raw.githubusercontent.com/rajendra0968jangid/Ds-Arya/main/extended_salary_data.csv"
+df = pd.read_csv(data)
+
+# standard scaler
+# scaler = StandardScaler()
+# df['experience'] = scaler.fit_transform(df[['experience']])   # 2d
+
+# print("Scaled Data")
+# print(df)
+
+# line chart
+# plt.plot(df["experience"], df["salary"], marker = 'o')
+# plt.xlabel("experience")
+# plt.ylabel("Salary")
+# plt.title("Experience & Salary Chart")
+# plt.grid(True)
+# plt.show()
+
+# split data exp -> x | sal -> y
+
+X = df['experience'] 
+y = df['salary']
+
+# print("X:")
+# print(X)
+
+# print("y:")
+# print(y)
+
+# train test split
+
+x_train,x_test,y_train,y_test = train_test_split(X, y, test_size = 0.2, random_state = 42)
+print("x train:", x_train)
+print("x test:", x_test)
+print("y train:", y_train)
+print("y test:", y_test)
+
+# simple linear reg | prediction
+
+from sklearn.linear_model import LinearRegression
+
+# model fit
+
+model = LinearRegression()
+model.fit(x_train, y_train)
+
+# input from user
+user = int(input("Enter Experience:"))
+
+# model prediction
+new_data = {
+    "experience": [user]
+}
+
+df1 = pd.DataFrame(new_data)
+print(df1)
+pred_data = model.predict(df1)
+print(pred_data[0])
